@@ -7,17 +7,9 @@ import RegisterForm from "./Register";
 import Feed from "./Feed";
 
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "shards-ui/dist/css/shards.min.css"
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap-theme.css';
 
-/**
- * Main app with router to redirect to different pages
- * 
- * Holds logged in state per browser session
- * 
- * TO DO:
- * - send a request to backend to check for token validity/expiry
- */
 export default class App extends Component { 
   state = {
     loading: true,
